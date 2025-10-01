@@ -2,10 +2,26 @@ import React from "react";
 import { Briefcase, CalendarEvent, People, Award } from "react-bootstrap-icons";
 
 const services = [
-  { icon: <Briefcase size={40} className="text-danger" />, title: "Corporate Events", desc: "Professional planning for meetings, seminars & conferences." },
-  { icon: <CalendarEvent size={40} className="text-primary" />, title: "Wedding Planning", desc: "Memorable wedding arrangements tailored to your style." },
-  { icon: <People size={40} className="text-success" />, title: "Social Gatherings", desc: "Birthday parties, anniversaries & private functions." },
-  { icon: <Award size={40} className="text-warning" />, title: "Award Functions", desc: "Elegant award nights & celebrations with style." },
+  {
+    icon: <Briefcase size={40} className="text-danger" />,
+    title: "Corporate Events",
+    desc: "Professional planning for meetings, seminars & conferences.",
+  },
+  {
+    icon: <CalendarEvent size={40} className="text-primary" />,
+    title: "Wedding Planning",
+    desc: "Memorable wedding arrangements tailored to your style.",
+  },
+  {
+    icon: <People size={40} className="text-success" />,
+    title: "Social Gatherings",
+    desc: "Birthday parties, anniversaries & private functions.",
+  },
+  {
+    icon: <Award size={40} className="text-warning" />,
+    title: "Award Functions",
+    desc: "Elegant award nights & celebrations with style.",
+  },
 ];
 
 const ServicesSection = () => {

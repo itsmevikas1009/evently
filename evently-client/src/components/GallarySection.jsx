@@ -17,7 +17,11 @@ const GallerySection = () => {
         <div className="row g-3">
           {gallery.map((img, i) => (
             <div key={i} className="col-md-4">
-              <img src={img} alt="Event" className="img-fluid rounded shadow-lg" />
+              <img
+                src={img}
+                alt="Event"
+                className="img-fluid rounded shadow-lg"
+              />
             </div>
           ))}
         </div>

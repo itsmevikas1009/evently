@@ -4,7 +4,7 @@ import partyGirl from "../assets/partyGirl.png";
 const HeroSection = () => {
   return (
     <section
-      style={{ backgroundColor: "#36104A"}}
+      style={{ backgroundColor: "#36104A" }}
       className="hero-section text-white"
     >
       <div className="container-fluid">
@@ -14,7 +14,8 @@ const HeroSection = () => {
             <p className="mb-2 text-pink fw-semibold">Time to party</p>
             <h1 className="fw-bold display-4 mb-3">
               Organization <br />
-              <span className="fw-normal">of</span><span> </span>
+              <span className="fw-normal">of</span>
+              <span> </span>
               <span className="text-primary">company</span> <br />
               <span className="text-danger">events</span>
             </h1>
