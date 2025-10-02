@@ -9,6 +9,8 @@ import GallerySection from "./components/GallarySection";
 import PartnersSection from "./components/PartnersSection";
 import NewsletterSection from "./components/NewsLetterSection";
 import ContactSection from "./components/ContactSection";
+import Login from "./components/Login.jsx";
+import SignUp from "./components/SignUp.jsx";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
       <PartnersSection />
       <NewsletterSection />
       <ContactSection />
+      <Login />
+      <SignUp />
     </div>
   );
 }
