@@ -15,8 +15,9 @@ const Login = () => {
           style={{ maxHeight: "500px", objectFit: "cover" }}
         />
       </div>
-      <div className="Login-Div col-md-6 p-5 text-center align-items-center">
-        <h3 className="fw-bold mb-5">Login to Get Started</h3>
+      <div
+        className="Login-Div col-md-6 p-5 text-center align-items-center text-dark">
+        <h3 className="fw-bold mb-5 ">Login to get started</h3>
         <form className="text-start">
           <input
             type="text"
