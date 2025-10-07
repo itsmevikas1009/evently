@@ -11,6 +11,7 @@ import NewsletterSection from "./components/NewsLetterSection";
 import ContactSection from "./components/ContactSection";
 import Login from "./components/Login.jsx";
 import SignUp from "./components/SignUp.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <ContactSection />
       <Login />
       <SignUp />
+      <Footer/>
     </div>
   );
 }
