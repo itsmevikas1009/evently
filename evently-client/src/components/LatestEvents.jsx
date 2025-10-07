@@ -53,7 +53,7 @@ const events = [
 
 const LatestEvents = () => {
   return (
-    <section style={{ backgroundColor: "#2a0c3a" }} className="py-5">
+    <section style={{ backgroundColor: "#260d33ff" }} className="py-5">
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-5">
