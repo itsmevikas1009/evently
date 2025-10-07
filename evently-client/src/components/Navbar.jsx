@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -7,14 +8,11 @@ const Navbar = () => {
       style={{ backgroundColor: "#36104A" }}
     >
       <div className="container-fluid d-flex align-items-center">
-        
         <h3 className="fw-bold text-white m-0">
           ev<span className="text-danger">Ently</span>
         </h3>
 
-        
         <button
-
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -28,12 +26,12 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarContent">
           <div className="d-flex flex-column flex-lg-row align-items-lg-center gap-4 mx-auto">
-            <a
+            <Link
               className="text-decoration-none text-white fw-semibold nav-link"
-              href="/"
+              to={"/"}
             >
               Home
-            </a>
+            </Link>
             <a
               className="text-decoration-none text-white fw-semibold nav-link"
               href="/about"
@@ -62,12 +60,18 @@ const Navbar = () => {
 
           {/* CTA Buttons (right) */}
           <div className="d-flex align-items-center gap-2 mt-3 mt-lg-0">
-            <button className="btn btn-danger fw-bold px-4 rounded-5">
+            <Link
+              to={"/login"}
+              className="btn btn-danger fw-bold px-4 rounded-5"
+            >
               Login
-            </button>
-            <button className="btn bg-light fw-bold px-4 rounded-5">
+            </Link>
+            <Link
+              to={"/signup"}
+              className="btn bg-light fw-bold px-4 rounded-5"
+            >
               Sign Up
-            </button>
+            </Link>
           </div>
         </div>
       </div>

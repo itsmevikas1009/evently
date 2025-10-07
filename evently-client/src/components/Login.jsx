@@ -1,5 +1,6 @@
 import React from "react";
 import LoginPageImg from "../assets/LoginPageImg.jpg";
+import { FaGoogle, FaLinkedinIn } from "react-icons/fa";
 
 const Login = () => {
   return (
@@ -15,8 +16,7 @@ const Login = () => {
           style={{ maxHeight: "500px", objectFit: "cover" }}
         />
       </div>
-      <div
-        className="Login-Div col-md-6 p-5 text-center align-items-center text-dark">
+      <div className="Login-Div col-md-6 p-5 text-center align-items-center text-dark">
         <h3 className="fw-bold mb-5 ">Login to get started</h3>
         <form className="text-start">
           <input
@@ -46,12 +46,7 @@ const Login = () => {
             }}
             className="rounded-2 justify-content-center align-items-center"
           >
-            <i
-              class="fa-brands fa-google text-dark mt-1"
-              style={{
-                fontSize: "1.5rem",
-              }}
-            ></i>
+            <FaGoogle />
           </a>
           <a
             href="#"
@@ -63,12 +58,7 @@ const Login = () => {
             }}
             className="rounded-2 justify-content-center align-items-center"
           >
-            <i
-              class="fa-brands fa-linkedin-in text-dark mt-1"
-              style={{
-                fontSize: "1.5rem",
-              }}
-            ></i>
+            <FaLinkedinIn />
           </a>
         </div>
       </div>

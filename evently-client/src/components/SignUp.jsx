@@ -1,5 +1,6 @@
 import React from "react";
 import SignUpImg from "../assets/SignUpImg.jpg";
+import { FaGoogle, FaLinkedinIn } from "react-icons/fa";
 
 const SignUp = () => {
   return (
@@ -49,12 +50,7 @@ const SignUp = () => {
             }}
             className="rounded-2 justify-content-center align-items-center"
           >
-            <i
-              class="fa-brands fa-google text-dark mt-1"
-              style={{
-                fontSize: "1.5rem",
-              }}
-            ></i>
+            <FaGoogle />
           </a>
           <a
             href="#"
@@ -66,12 +62,7 @@ const SignUp = () => {
             }}
             className="rounded-2 justify-content-center align-items-center"
           >
-            <i
-              class="fa-brands fa-linkedin-in text-dark mt-1"
-              style={{
-                fontSize: "1.5rem",
-              }}
-            ></i>
+            <FaLinkedinIn />
           </a>
         </div>
       </div>
