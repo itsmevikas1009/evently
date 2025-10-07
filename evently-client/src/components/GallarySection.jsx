@@ -1,12 +1,18 @@
 import React from "react";
+import gl1 from "../assets/g1.jpeg"
+import gl2 from "../assets/g2.jpeg"
+import gl3 from "../assets/g3.jpeg"
+import gl4 from "../assets/g4.jpeg"
+import gl5 from "../assets/g5.jpeg"
+import gl6 from "../assets/g6.jpeg"
 
 const gallery = [
-  "https://source.unsplash.com/400x300/?wedding,event",
-  "https://source.unsplash.com/400x300/?party,celebration",
-  "https://source.unsplash.com/400x300/?conference,meeting",
-  "https://source.unsplash.com/400x300/?concert,event",
-  "https://source.unsplash.com/400x300/?birthday,party",
-  "https://source.unsplash.com/400x300/?award,ceremony",
+  gl1,
+  gl2,
+  gl3,
+  gl4,
+  gl5,
+  gl6
 ];
 
 const GallerySection = () => {
