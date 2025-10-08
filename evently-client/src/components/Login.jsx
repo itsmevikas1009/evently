@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className="Login-Page row g-0 p-5">
+    <div className="Login-Page row g-0 p-5 h-90">
       <div className="Login-Img-Div col-md-8 d-flex justify-content-center">
         <img
           src={LoginPageImg}
