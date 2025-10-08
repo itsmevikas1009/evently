@@ -33,7 +33,9 @@ const SignUp = () => {
           ></input>
           <br></br>
         </form>
-        <button class="btn btn-danger fw-bold px-4 rounded-5 ">Sign up</button>
+        <button className="btn btn-danger fw-bold px-4 rounded-5 ">
+          Sign up
+        </button>
 
         <h4 className="mt-5">Register through</h4>
         <div className="signUpoptions mt-4 d-flex justify-content-evenly align-items-center">
