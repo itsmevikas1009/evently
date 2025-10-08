@@ -8,7 +8,7 @@ const Navbar = () => {
       style={{ backgroundColor: "#36104A" }}
     >
       <div className="container-fluid d-flex align-items-center">
-        <h3 className="fw-bold text-white m-0" style={{ fontStyle: "italic" }}>
+        <h3 className="brand-logo fw-bold text-white m-0">
           ev
           <span className="text-danger" style={{ fontStyle: "italic" }}>
             Ently
@@ -30,31 +30,31 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarContent">
           <div className="d-flex flex-column flex-lg-row align-items-lg-center gap-4 mx-auto">
             <Link
-              className="text-decoration-none text-white fw-semibold nav-link"
+              className="nav-link text-decoration-none text-white fw-semibold nav-link"
               to={"/"}
             >
               Home
             </Link>
             <a
-              className="text-decoration-none text-white fw-semibold nav-link"
+              className="nav-link text-decoration-none text-white fw-semibold nav-link"
               href="/about"
             >
               About us
             </a>
             <a
-              className="text-decoration-none text-white fw-semibold nav-link"
+              className="nav-link text-decoration-none text-white fw-semibold nav-link"
               href="/offer"
             >
               Offer
             </a>
             <Link
               to="/events"
-              className="text-decoration-none text-white fw-semibold nav-link"
+              className="nav-link text-decoration-none text-white fw-semibold nav-link"
             >
               Events
             </Link>
             <a
-              className="text-decoration-none text-white fw-semibold nav-link"
+              className="nav-link text-decoration-none text-white fw-semibold nav-link"
               href="/contact"
             >
               Contact

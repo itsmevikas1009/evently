@@ -12,8 +12,11 @@ const Footer = () => {
       style={{ backgroundColor: "#1A1331" }}
     >
       <div className="col-md-3 d-flex flex-column align-items-center pb-5 gap-2">
-        <h1 style={{ color: "#e11717ff" }} className="">
-          <span className="text-light">ev</span>Ently
+        <h1 className="brand-logo">
+          ev
+          <span className="text-danger" style={{ fontStyle: "italic" }}>
+            Ently
+          </span>
         </h1>
         <div className="social-media d-flex gap-3">
           <IoLogoInstagram style={{ cursor: "pointer" }} size={30} />
@@ -66,7 +69,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="border border-5 border-light" />
+      <hr className="border border-1 border-light" />
     </div>
   );
 };
