@@ -8,6 +8,7 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+<<<<<<< HEAD
 .Login-Page,
 .SignUp-Page {
   background-color: rgb(54, 16, 74);
@@ -43,3 +44,6 @@
 .forgot-password{
   text-decoration: none;
 }
+=======
+
+>>>>>>> f9353025c507b2cf19bad18c23c7438b18c9f325
