@@ -1,64 +1,66 @@
 import React from "react";
+import "../App";
 import LoginPageImg from "../assets/LoginPageImg.jpg";
-import { FaGoogle, FaLinkedinIn } from "react-icons/fa";
+import { FaGoogle, FaFacebookF } from "react-icons/fa";
+import { VscAccount } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div
-      className="Login-Page row g-0 p-5 text-white"
-      style={{ backgroundColor: "#50589C" }}
-    >
-      <div className="Login-Img col-md-6 d-flex justify-content-center">
+    <div className="Login-Page row g-0 p-5 h-90">
+      <div className="Login-Img-Div col-md-8 d-flex justify-content-center">
         <img
           src={LoginPageImg}
           alt="Event"
-          className="img-fluid rounded-2 shadow-lg"
-          style={{ maxHeight: "500px", objectFit: "cover" }}
+          className="Login-Img img-fluid rounded-2 shadow-lg"
         />
       </div>
-      <div className="Login-Div col-md-6 p-5 text-center align-items-center text-dark">
+      <div className="Login-Div col-md-4 p-5 text-center align-items-center text-white">
+        <VscAccount className="Account-Icon" />
         <h3 className="fw-bold mb-5 ">Login to get started</h3>
-        <form className="text-start">
+        <form className="text-start d-flex flex-column align-items-center">
           <input
             type="text"
             placeholder="Email Address"
-            className="form-control mb-3"
+            className="form-control mb-3 w-75 rounded-5"
           ></input>
           <br></br>
           <input
             type="password"
             placeholder="Password"
-            className="form-control mb-3"
+            className="form-control mb-3 w-75 rounded-5"
           ></input>
           <br></br>
         </form>
         <button class="btn btn-danger fw-bold px-4 rounded-5 ">Login</button>
+
+        <div className="mt-4 d-flex justify-content-between">
+          <div>
+            <input type="checkbox" className="me-1"></input>
+            Remember me
+          </div>
+          <div>
+            <Link to={"/login"} className="ms-5 forgot-password">
+              Forgot Password
+            </Link>
+          </div>
+        </div>
 
         <h4 className="mt-5">Login through</h4>
         <div className="loginoptions mt-4 d-flex justify-content-evenly align-items-center">
           <a
             href="#"
             title="Google"
-            style={{
-              height: "2rem",
-              width: "2rem",
-              backgroundColor: "#9193a1ff",
-            }}
-            className="rounded-2 justify-content-center align-items-center"
+            className="SignUp-Icon rounded-2 justify-content-center align-items-center "
           >
             <FaGoogle />
           </a>
           <a
             href="#"
             title="LinkedIn"
-            style={{
-              height: "2rem",
-              width: "2rem",
-              backgroundColor: "#9193a1ff",
-            }}
-            className="rounded-2 justify-content-center align-items-center"
+            className="SignUp-Icon rounded-2 justify-content-center align-items-center"
           >
-            <FaLinkedinIn />
+            <FaFacebookF />
           </a>
         </div>
       </div>
