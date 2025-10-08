@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className='row d-flex mx-auto text-light pt-4' style={{ backgroundColor: "#1A1331" }}>
       <div className='col-md-3 d-flex flex-column align-items-center pb-5 gap-2'>
-        <h1 style={{ color: "#ff69b4" }} className="">evEntly</h1>
+        <h1 style={{ color: "#e11717ff" }} className=""><span className='text-light'>ev</span>Ently</h1>
         <div className="social-media d-flex gap-3">
           <img style={{ cursor: "pointer" }} src={insta} width={30} />
           <img style={{ cursor: "pointer" }} src={facebookicon} width={30} />
