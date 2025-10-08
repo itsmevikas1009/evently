@@ -7,10 +7,6 @@ import GallerySection from "../components/GallarySection.jsx";
 import PartnersSection from "../components/PartnersSection.jsx";
 import NewsletterSection from "../components/NewsletterSection.jsx";
 import ContactSection from "../components/ContactSection.jsx";
-import HeroBanner from "../components/HeroBanner.jsx";
-import EventCategories from "../components/EventCategories.jsx";
-import ArtistsSpotlight from "../components/ArtistsSpotlight.jsx";
-import EventsGrid from "../components/EventsGrid.jsx";
 
 const Body = () => {
   return (
@@ -25,10 +21,6 @@ const Body = () => {
         <PartnersSection />
         <NewsletterSection />
         <ContactSection />
-        {/* <HeroBanner />
-        <EventCategories />
-        <ArtistsSpotlight />
-        <EventsGrid /> */}
       </div>
     </>
   );

@@ -1,73 +1,93 @@
 import React from "react";
-import { Container, Button, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button, Carousel } from "react-bootstrap";
 
-const HeroBanner = () => {
+// Dynamic Slide Data
+const bannerSlides = [
+  {
+    title: "Heritage India Tour | Dr. Satinder Sartaaj Live In Rohtak",
+    subtitle: "Jawaharlal Nehru Stadium, Delhi/NCR",
+    image:
+      "https://media.insider.in/image/upload/c_crop,g_custom/v1759754970/ar1ogleu5aqneytbfg2i.jpg",
+    cta: "Explore Events",
+  },
+  {
+    title: "Zamna India | Gurugram",
+    subtitle: "Venue to be announced, Gurugram",
+    image:
+      "https://media.insider.in/image/upload/c_crop,g_custom/v1756987926/pr7s3fjv1w5trer0szf2.png",
+    cta: "Reserve Tickets",
+  },
+  {
+    title: "Akon India Tour 2025 | Delhi",
+    subtitle: "Gate No 14, Jawaharlal Nehru Stadium, Delhi/NCR",
+    image:
+      "https://media.insider.in/image/upload/c_crop,g_custom/v1754904330/vipsq91tydphmwjrylhw.jpg",
+    cta: "Book Now",
+  },
+];
 
+const HeroCarousel = () => (
+  <div
+    className="text-white"
+    style={{
+      minHeight: "80vh",
+      padding: "2rem 0",
+      backgroundColor: "#333",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+  >
+    <Carousel interval={5000} indicators={true} controls={true} fade>
+      {bannerSlides.map((slide, idx) => (
+        <Carousel.Item key={idx}>
+          <Container>
+            <Row className="align-items-center">
+              {/* Text Content */}
+              <Col
+                xs={12}
+                md={6}
+                className="d-flex align-items-center justify-content-center"
+              >
+                <div
+                  className="p-4 rounded-3 d-flex flex-column justify-content-center w-100"
+                  style={{
+                    marginBottom: "1rem",
+                    background: "rgba(0,0,0,0.25)",
+                  }}
+                >
+                  <h1 className="display-5 fw-bold">{slide.title}</h1>
+                  <p className="lead mb-4">{slide.subtitle}</p>
+                  <Button
+                    variant="light"
+                    size="lg"
+                    className="rounded-pill shadow"
+                  >
+                    {slide.cta}
+                  </Button>
+                </div>
+              </Col>
+              {/* Banner Image */}
+              <Col
+                md={6}
+                className="d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className="img-fluid rounded shadow-2xl border border-white border-opacity-50 d-none d-md-block"
+                  style={{
+                    maxHeight: "70vh",
+                    width: "85%",
+                    borderRadius: "12px",
+                  }}
+                />
+              </Col>
+            </Row>
+          </Container>
+        </Carousel.Item>
+      ))}
+    </Carousel>
+  </div>
+);
 
-  return (
-    <div
-      // Main banner container - uses flex for vertical centering
-      className="text-white d-flex align-items-center"
-      style={{
-        minHeight: "90vh", 
-        padding: '2rem 0',
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundColor: "#333", // Fallback color
-      }}
-    >
-      <Container>
-        <Row className="align-items-center h-100">
-          
-          {/* Content Column (Text & Button) 
-              The Col will stretch to match the image height automatically.
-          */}
-          <Col 
-            xs={12} 
-            md={6} 
-            // Removed p-4 and background color from Col
-            className="d-flex align-items-center" 
-          >
-            {/* INNER DIV: Uses h-100 to fill the Col height, and applies the background and padding */}
-            <div
-              className="p-4 rounded-3 d-flex flex-column justify-content-center"
-              style={{ 
-                // Only add margin on mobile (xs) to separate it if the image is hidden
-                marginBottom: '1rem', 
-              }}
-            >
-              <h1 className="display-4 fw-bold">Heritage India Tour | Dr. Satinder Sartaaj Live In Rohtak</h1>
-              <p className="lead mb-4">
-                Jawaharlal Nehru Stadium, Delhi/NCR
-              </p>
-              <Button variant="light" size="lg" className="rounded-pill shadow">
-                Explore Events
-              </Button>
-            </div>
-          </Col>
-
-          {/* Image/Graphic Column - Visible only on medium screens (md) and up 
-             d-none hides it on xs/sm, d-md-flex shows it on md+
-          */}
-          <Col
-            md={6}
-            className="d-flex justify-content-center align-items-center"
-          >
-            <img
-              src="https://media.insider.in/image/upload/c_crop,g_custom/v1759754970/ar1ogleu5aqneytbfg2i.jpg"
-              alt="People enjoying an event"
-              className="img-fluid rounded shadow-2xl border border-white border-opacity-50"
-              style={{ 
-                maxHeight: "80vh", 
-                width: "80%",
-                borderRadius: '12px',
-              }}
-            />
-          </Col>
-        </Row>
-      </Container>
-    </div>
-  );
-};
-
-export default HeroBanner;
+export default HeroCarousel;

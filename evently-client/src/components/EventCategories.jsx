@@ -11,33 +11,37 @@ const categories = [
   { name: "Parties", icon: "🎉" },
 ];
 
-const EventCategories = () => {
-  return (
-    <Container className="my-5">
-      <h3 className="mb-4">EXPLORE EVENTS</h3>
-      <div className="d-flex overflow-auto pb-2">
-        {categories.map((cat) => (
+const EventCategories = () => (
+  <Container className="my-5">
+    <h3 className="mb-4">EXPLORE EVENTS</h3>
+    <Row>
+      {categories.map((cat) => (
+        <Col
+          key={cat.name}
+          xs={6} // 2 columns on extra small screens
+          md={3} // 4 columns on medium (≥768px) and large (≥992px) screens
+          className="mb-4 d-flex justify-content-center"
+        >
           <div
-            key={cat.name}
-            className="text-center me-4 flex-shrink-0"
-            style={{ cursor: "pointer", width: "20vw" }}
+            className="text-center"
+            style={{ cursor: "pointer", width: "100%" }}
           >
             <div
-              className="bg-light rounded-circle d-flex align-items-center justify-content-center mb-1"
+              className="bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-1"
               style={{
-                width: "20vw",
-                height: "20vw",
-                fontSize: "50px",
+                width: "75px",
+                height: "75px",
+                fontSize: "2.5rem",
               }}
             >
               {cat.icon}
             </div>
             <small className="text-muted">{cat.name}</small>
           </div>
-        ))}
-      </div>
-    </Container>
-  );
-};
+        </Col>
+      ))}
+    </Row>
+  </Container>
+);
 
 export default EventCategories;
