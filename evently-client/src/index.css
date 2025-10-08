@@ -1,5 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
   /* box-sizing: border-box; */
+}
+  .footer-li{
+    padding: 10px;
+    padding-right:-6px;
+    cursor: pointer;
+  list-style: none;
+  
+}
+.footer-li:hover{
+  background-color: rgb(133, 30, 30);
 }

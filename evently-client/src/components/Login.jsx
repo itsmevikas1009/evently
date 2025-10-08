@@ -32,7 +32,7 @@ const Login = () => {
           ></input>
           <br></br>
         </form>
-        <button class="btn btn-danger fw-bold px-4 rounded-5 ">Login</button>
+        <button className="btn btn-danger fw-bold px-4 rounded-5 ">Login</button>
 
         <h4 className="mt-5">Login through</h4>
         <div className="loginoptions mt-4 d-flex justify-content-evenly align-items-center">
