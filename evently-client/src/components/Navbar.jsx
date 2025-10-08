@@ -8,8 +8,11 @@ const Navbar = () => {
       style={{ backgroundColor: "#36104A" }}
     >
       <div className="container-fluid d-flex align-items-center">
-        <h3 className="fw-bold text-white m-0">
-          ev<span className="text-danger">Ently</span>
+        <h3 className="fw-bold text-white m-0" style={{ fontStyle: "italic" }}>
+          ev
+          <span className="text-danger" style={{ fontStyle: "italic" }}>
+            Ently
+          </span>
         </h3>
 
         <button
