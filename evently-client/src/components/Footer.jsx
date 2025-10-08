@@ -1,23 +1,30 @@
 import React from "react";
-import insta from "../assets/insta.png";
-import facebookicon from "../assets/facebookicon.png";
-import mailicon from "../assets/mailicon.png";
+import {
+  IoMailOutline,
+  IoLogoFacebook,
+  IoLogoInstagram,
+} from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <div className='row d-flex mx-auto text-light pt-4' style={{ backgroundColor: "#1A1331" }}>
-      <div className='col-md-3 d-flex flex-column align-items-center pb-5 gap-2'>
-        <h1 style={{ color: "#e11717ff" }} className=""><span className='text-light'>ev</span>Ently</h1>
+    <div
+      className="row d-flex mx-auto text-light pt-4"
+      style={{ backgroundColor: "#1A1331" }}
+    >
+      <div className="col-md-3 d-flex flex-column align-items-center pb-5 gap-2">
+        <h1 style={{ color: "#e11717ff" }} className="">
+          <span className="text-light">ev</span>Ently
+        </h1>
         <div className="social-media d-flex gap-3">
-          <img style={{ cursor: "pointer" }} src={insta} width={30} />
-          <img style={{ cursor: "pointer" }} src={facebookicon} width={30} />
-          <img style={{ cursor: "pointer" }} src={mailicon} width={30} />
+          <IoLogoInstagram style={{ cursor: "pointer" }} size={30} />
+          <IoLogoFacebook style={{ cursor: "pointer" }} size={30} />
+          <IoMailOutline style={{ cursor: "pointer" }} size={30} />
         </div>
       </div>
 
-      <div className='col-md-9 d-flex '>
-        <div className='row'>
-          <div className='col-md-3 col-sm-6'>
+      <div className="col-md-9 d-flex ">
+        <div className="row">
+          <div className="col-md-3 col-sm-6">
             <ul>
               <h4 className="text-warning">SIETE FOODS</h4>
               <li className="footer-li">Carees</li>
@@ -30,8 +37,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className='col-md-3 col-sm-6 '>
-            <ul >
+          <div className="col-md-3 col-sm-6 ">
+            <ul>
               <h4 className="text-warning">WAYS TO SHOP</h4>
               <li className="footer-li">Subscribe & Save</li>
               <li className="footer-li">Amazon</li>
@@ -42,22 +49,21 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className='col-md-3 col-sm-6'>
-            <ul >
+          <div className="col-md-3 col-sm-6">
+            <ul>
               <h4 className="text-warning">MY SIETE ACCOUNT</h4>
               <li className="footer-li">My Account</li>
               <li className="footer-li">Order & Subscriptions</li>
             </ul>
           </div>
 
-          <div className='col-md-3 col-sm-6 '>
+          <div className="col-md-3 col-sm-6 ">
             <ul className="FooterUL">
               <h4 className="text-warning">HELP & FAQS</h4>
               <li className="footer-li">Contact Us</li>
               <li className="footer-li">FAQ</li>
             </ul>
           </div>
-
         </div>
       </div>
       <hr className="border border-5 border-light" />
