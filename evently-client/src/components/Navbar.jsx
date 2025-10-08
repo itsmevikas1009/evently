@@ -47,12 +47,12 @@ const Navbar = () => {
             >
               Offer
             </a>
-            <a
+            <Link
+              to="/events"
               className="text-decoration-none text-white fw-semibold nav-link"
-              href="/events"
             >
               Events
-            </a>
+            </Link>
             <a
               className="text-decoration-none text-white fw-semibold nav-link"
               href="/contact"

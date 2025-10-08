@@ -1,68 +1,57 @@
 import React from "react";
 import SignUpImg from "../assets/SignUpImg.jpg";
-import { FaGoogle, FaLinkedinIn } from "react-icons/fa";
+import { FaGoogle, FaFacebookF } from "react-icons/fa";
 
 const SignUp = () => {
   return (
-    <div
-      className="Login-Page row g-0 p-5 text-white"
-      style={{ backgroundColor: "#50589C" }}
-    >
-      <div className="Login-Div col-md-6 p-5 text-center align-items-center text-dark">
+    <div className="SignUp-Page row g-0 p-5 text-white">
+      <div className="SignUp-Div col-md-6 p-5 text-center align-items-center">
         <h3 className="fw-bold mb-5">Create Your Account</h3>
-        <form className="text-start">
+        <form className="text-start d-flex flex-column align-items-center">
           <input
             type="text"
             placeholder="Enter User Name"
-            className="form-control mb-3"
+            className="form-control mb-3 w-75"
           ></input>
           <br></br>
           <input
             type="email"
             placeholder="Enter Your Email Address"
-            className="form-control mb-3"
+            className="form-control mb-3 w-75"
           ></input>
           <br></br>
           <input
             type="password"
             placeholder="Create Password"
-            className="form-control mb-3"
+            className="form-control mb-3 w-75"
           ></input>
           <br></br>
           <input
             type="password"
             placeholder="Confirm Password"
-            className="form-control mb-3"
+            className="form-control mb-3 w-75"
           ></input>
           <br></br>
         </form>
-        <button class="btn btn-danger fw-bold px-4 rounded-5 ">Sign up</button>
+        <button className="btn btn-danger fw-bold px-4 rounded-5 ">
+          Sign up
+        </button>
 
         <h4 className="mt-5">Register through</h4>
-        <div className="loginoptions mt-4 d-flex justify-content-evenly align-items-center">
+        <div className="signUpoptions mt-4 d-flex justify-content-evenly align-items-center">
           <a
             href="#"
             title="Google"
-            style={{
-              height: "2rem",
-              width: "2rem",
-              backgroundColor: "#9193a1ff",
-            }}
-            className="rounded-2 justify-content-center align-items-center"
+            className="login-icons rounded-2 justify-content-center align-items-center"
           >
             <FaGoogle />
           </a>
           <a
             href="#"
             title="LinkedIn"
-            style={{
-              height: "2rem",
-              width: "2rem",
-              backgroundColor: "#9193a1ff",
-            }}
-            className="rounded-2 justify-content-center align-items-center"
+            className="login-icons rounded-2 justify-content-center align-items-center"
           >
-            <FaLinkedinIn />
+            <FaFacebookF />
           </a>
         </div>
       </div>
@@ -70,8 +59,7 @@ const SignUp = () => {
         <img
           src={SignUpImg}
           alt="Event"
-          className="img-fluid rounded-2 shadow-lg"
-          style={{ maxHeight: "750px", objectFit: "cover" }}
+          className="SignUp-Img img-fluid rounded-2 shadow-lg"
         />
       </div>
     </div>

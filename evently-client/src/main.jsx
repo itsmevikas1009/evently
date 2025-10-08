@@ -9,6 +9,7 @@ import Body from "./pages/Body.jsx";
 import Login from "./components/Login.jsx";
 import SignUp from "./components/SignUp.jsx";
 import Error from "./pages/Error.jsx";
+import Event from "./pages/Event.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/",
         element: <Body />,
+      },
+      {
+        path: "/events",
+        element: <Event />,
       },
       {
         path: "/login",

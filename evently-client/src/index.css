@@ -9,3 +9,15 @@
   font-style: normal;
   /* box-sizing: border-box; */
 }
+
+.footer-li {
+  padding: 10px;
+  padding-right: -6px;
+  cursor: pointer;
+  list-style: none;
+
+}
+
+.footer-li:hover {
+  border: 1px red solid;
+}
