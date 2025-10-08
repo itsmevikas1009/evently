@@ -16,7 +16,7 @@ const Body = () => {
   return (
     <>
       <div className="body">
-        {/* <HeroSection />
+        <HeroSection />
         <LatestEvents />
         <ServicesSection />
         <TestimonialsSection />
@@ -24,11 +24,11 @@ const Body = () => {
         <GallerySection />
         <PartnersSection />
         <NewsletterSection />
-        <ContactSection /> */}
-        <HeroBanner />
+        <ContactSection />
+        {/* <HeroBanner />
         <EventCategories />
         <ArtistsSpotlight />
-        <EventsGrid />
+        <EventsGrid /> */}
       </div>
     </>
   );
