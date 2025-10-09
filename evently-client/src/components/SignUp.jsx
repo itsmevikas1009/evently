@@ -5,31 +5,31 @@ import { FaGoogle, FaFacebookF } from "react-icons/fa";
 const SignUp = () => {
   return (
     <div className="SignUp-Page row g-0 p-5 text-white">
-      <div className="SignUp-Div col-md-6 p-5 text-center align-items-center">
+      <div className="SignUp-Div col-md-5 p-5 text-center align-items-center">
         <h3 className="fw-bold mb-5">Create Your Account</h3>
         <form className="text-start d-flex flex-column align-items-center">
           <input
             type="text"
             placeholder="Enter User Name"
-            className="form-control mb-3 w-75"
+            className="form-control mb-3 w-75 rounded-5"
           ></input>
           <br></br>
           <input
             type="email"
             placeholder="Enter Your Email Address"
-            className="form-control mb-3 w-75"
+            className="form-control mb-3 w-75 rounded-5"
           ></input>
           <br></br>
           <input
             type="password"
             placeholder="Create Password"
-            className="form-control mb-3 w-75"
+            className="form-control mb-3 w-75 rounded-5"
           ></input>
           <br></br>
           <input
             type="password"
             placeholder="Confirm Password"
-            className="form-control mb-3 w-75"
+            className="form-control mb-3 w-75 rounded-5"
           ></input>
           <br></br>
         </form>
@@ -55,7 +55,7 @@ const SignUp = () => {
           </a>
         </div>
       </div>
-      <div className="Login-Img col-md-6 d-flex justify-content-center">
+      <div className="Login-Img col-md-7 d-flex justify-content-center">
         <img
           src={SignUpImg}
           alt="Event"

@@ -36,6 +36,17 @@ const Login = () => {
           Login
         </button>
 
+        <div className="mt-4 d-flex justify-content-between">
+          <div>
+            <input type="checkbox" className="me-2"></input>
+            Remember Me
+          </div>
+
+          <div className="Forget-Password">
+            <Link to="/login">Forgot Password</Link>
+          </div>
+        </div>
+
         <h4 className="mt-5">Login through</h4>
         <div className="loginoptions mt-4 d-flex justify-content-evenly align-items-center">
           <a
