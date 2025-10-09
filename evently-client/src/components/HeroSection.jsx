@@ -1,5 +1,6 @@
 import React from "react";
 import partyGirl from "../assets/partyGirl.png";
+import {Link} from "react-router-dom"
 
 const HeroSection = () => {
   return (
@@ -28,9 +29,9 @@ const HeroSection = () => {
               <button className="btn btn-danger px-4 py-2 fw-bold rounded-3 w-100 w-sm-auto">
                 Book event →
               </button>
-              <button className="btn btn-outline-light px-4 py-2 fw-bold rounded-3 w-100 w-sm-auto">
+              <Link to="/events" className="btn btn-outline-light px-4 py-2 fw-bold rounded-3 w-100 w-sm-auto">
                 See events →
-              </button>
+              </Link>
             </div>
           </div>
 

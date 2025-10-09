@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   return (
     <nav
-      className="navbar px-3 navbar-expand-lg py-3"
+      className="navbar px-3 navbar-expand-lg py-3 position-sticky"
       style={{ backgroundColor: "#36104A" }}
     >
       <div className="container-fluid d-flex align-items-center">
@@ -53,12 +54,15 @@ const Navbar = () => {
             >
               Events
             </Link>
-            <a
+            <HashLink
               className="nav-link text-decoration-none text-white fw-semibold nav-link"
-              href="/contact"
+              to="/#contact"
+              scroll={(el) =>
+                el.scrollIntoView({ behavior: "smooth", block: "center" })
+              }
             >
               Contact
-            </a>
+            </HashLink>
           </div>
 
           {/* CTA Buttons (right) */}
