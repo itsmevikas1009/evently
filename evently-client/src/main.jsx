@@ -10,6 +10,7 @@ import Login from "./components/Login.jsx";
 import SignUp from "./components/SignUp.jsx";
 import Error from "./pages/Error.jsx";
 import Event from "./pages/Event.jsx";
+import { AuthProvider } from "./context/AuthContext.jsx";
 
 const appRouter = createBrowserRouter([
   {
@@ -39,6 +40,8 @@ const appRouter = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={appRouter} />
+    <AuthProvider>
+      <RouterProvider router={appRouter} />
+    </AuthProvider>
   </StrictMode>
 );

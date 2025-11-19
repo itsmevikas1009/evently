@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { useAuth } from "../context/AuthContext";
 
 const Navbar = () => {
+  const { user, logout } = useAuth();
+
   return (
     <nav
       className="navbar px-3 navbar-expand-lg py-3 position-sticky"
@@ -67,18 +70,40 @@ const Navbar = () => {
 
           {/* CTA Buttons (right) */}
           <div className="d-flex align-items-center gap-2 mt-3 mt-lg-0">
-            <Link
-              to={"/login"}
-              className="btn btn-danger fw-bold px-4 rounded-5"
-            >
-              Login
-            </Link>
-            <Link
-              to={"/signup"}
-              className="btn bg-light fw-bold px-4 rounded-5"
-            >
-              Sign Up
-            </Link>
+            {user ? (
+              <>
+                <span className="text-white fw-semibold me-2">
+                  {user.fullName || user.username}
+                </span>
+                <Link
+                  to={"/profile"}
+                  className="btn btn-light fw-bold px-4 rounded-5"
+                >
+                  Profile
+                </Link>
+                <button
+                  className="btn btn-danger fw-bold px-4 rounded-5"
+                  onClick={logout}
+                >
+                  Logout
+                </button>
+              </>
+            ) : (
+              <>
+                <Link
+                  to={"/login"}
+                  className="btn btn-danger fw-bold px-4 rounded-5"
+                >
+                  Login
+                </Link>
+                <Link
+                  to={"/signup"}
+                  className="btn bg-light fw-bold px-4 rounded-5"
+                >
+                  Sign Up
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </div>
