@@ -36,10 +36,7 @@ const HeroSection = () => {
 
           {/* Right Column - Image */}
           <div className="col-md-6 d-flex justify-content-center mt-4 mt-md-0">
-            <div
-              className="position-relative w-100"
-              style={{ maxWidth: "500px" }}
-            >
+            <div className="position-relative w-100" style={{ maxWidth: "500px" }}>
               <img
                 src={partyGirl}
                 alt="Event"

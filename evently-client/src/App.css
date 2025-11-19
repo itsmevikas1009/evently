@@ -2,10 +2,6 @@
   font-style: italic;
 }
 
-.navbar {
-  box-shadow: 0 4px 30px rgba(116, 109, 109, 0.356);
-}
-
 /* Make hamburger icon white */
 .navbar-toggler {
   border: none !important;
@@ -25,17 +21,17 @@
 .Login-Page,
 .SignUp-Page {
   background-color: rgb(54, 16, 74);
+  height: 100vh;
 }
 
-.Login-Div,
-.SignUp-Div {
+.Login-Div {
   box-shadow: inset 10px 0 25px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
 
-.Login-Img,
-.SignUp-Img {
-  max-height: 100%;
-  width: 70%;
+.Login-Img {
+  max-height: 88vh;
+  max-width: 90%;
   object-fit: cover;
 }
 
