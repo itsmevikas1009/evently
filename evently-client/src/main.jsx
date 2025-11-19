@@ -10,6 +10,8 @@ import Login from "./components/Login.jsx";
 import SignUp from "./components/SignUp.jsx";
 import Error from "./pages/Error.jsx";
 import Event from "./pages/Event.jsx";
+import Offer from "./pages/Offer.jsx";
+
 
 const appRouter = createBrowserRouter([
   {
@@ -23,6 +25,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/events",
         element: <Event />,
+      },
+      {
+        path: "/offer",
+        element: <Offer />,
       },
       {
         path: "/login",
