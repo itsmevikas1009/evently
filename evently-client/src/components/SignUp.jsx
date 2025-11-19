@@ -75,7 +75,7 @@ const SignUp = () => {
 
   return (
     <div className="SignUp-Page row g-0 p-5 text-white">
-      <div className="SignUp-Div col-md-6 p-5 text-center align-items-center">
+      <div className="SignUp-Div col-md-5 p-5 text-center align-items-center">
         <h3 className="fw-bold mb-5">Create Your Account</h3>
         <form
           className="text-start d-flex flex-column align-items-center"
@@ -134,7 +134,7 @@ const SignUp = () => {
           </button>
         </form>
       </div>
-      <div className="Login-Img col-md-6 d-flex justify-content-center">
+      <div className="Login-Img col-md-7 d-flex justify-content-center">
         <img
           src={SignUpImg}
           alt="Event"

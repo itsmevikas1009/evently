@@ -21,16 +21,16 @@
 .Login-Page,
 .SignUp-Page {
   background-color: rgb(54, 16, 74);
-  height: 100vh;
+  height: 100%;
 }
 
-.Login-Div {
+.Login-Div, .SignUp-Div {
   box-shadow: inset 10px 0 25px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
 }
 
-.Login-Img {
-  max-height: 88vh;
+.Login-Img, .SignUp-Img {
+  max-height: 100%;
   max-width: 90%;
   object-fit: cover;
 }
@@ -39,11 +39,6 @@
 .SignUp-Icon {
   font-size: 2rem;
   color: white;
-}
-
-.SignUp-Img {
-  max-height: 635px;
-  object-fit: cover;
 }
 
 .Account-Icon {
