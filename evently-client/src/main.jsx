@@ -11,6 +11,7 @@ import SignUp from "./components/SignUp.jsx";
 import Error from "./pages/Error.jsx";
 import Event from "./pages/Event.jsx";
 import { AuthProvider } from "./context/AuthContext.jsx";
+import Offer from "./pages/Offer.jsx";
 
 const appRouter = createBrowserRouter([
   {
